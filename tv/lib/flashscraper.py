@@ -152,7 +152,7 @@ def _youtube_callback_step2(info, video_id, callback):
                 prefs.HIGH_QUALITY_DOWNLOADS)
 
         highest_quality = "22"
-        if high_quality_downloads is True:
+        if high_quality_downloads is False:
             highest_quality = "18"
 
         # http://en.wikipedia.org/wiki/YouTube#Quality_and_codecs
