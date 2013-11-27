@@ -151,7 +151,9 @@ def _youtube_callback_step2(info, video_id, callback):
         high_quality_downloads = app.config.get(
                 prefs.HIGH_QUALITY_DOWNLOADS)
 
-        highest_quality = if high_quality_downloads "22" else "18"
+        highest_quality = "22"
+        if high_quality_downloads is True:
+            highest_quality = "18"
 
         # http://en.wikipedia.org/wiki/YouTube#Quality_and_codecs
         for fmt, content_type in [(highest_quality, u"video/mp4"),
